@@ -74,7 +74,6 @@ if __name__ == '__main__':
         try:
             question = generate_single_question()
             pop_question_window()
-            time.sleep(random.randint(min_time_to_wait, max_time_to_wait))
             is_error_announced = False
         except requests.exceptions.ConnectionError as e:
             if not is_error_announced:
